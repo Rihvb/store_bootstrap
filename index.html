@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomadly</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Hero Section Styling */
+    .hero-section {
+      background: url('assets/pexels-tdcat-69866.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-section h1 {
+      font-size: 3.5rem;
+    }
+    .hero-section p {
+      font-size: 1.8rem;
+    }
+    /* Navbar Styling */
+    .navbar {
+      background-color: #13345b; /* Inviting Blue for travel theme */
+    }
+    .navbar-brand {
+      color: #f0ead6 !important;
+    }
+    .navbar-nav {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .nav-link {
+      color: #f0ead6 !important;
+      font-size: 1.1rem;
+    }
+    .nav-link:hover {
+      color: #ff9f1c !important; /* Bright Orange for hover */
+    }
+    /* Button Styling */
+    .btn-primary {
+      background-color: #ff9f1c;
+      border-color: #ff9f1c;
+    }
+    .btn-primary:hover {
+      background-color: #ff6f59;
+      border-color: #ff6f59;
+    }
+    /* Cards Styling */
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card-title {
+      color: #3d5a80; /* Slate Blue */
+      font-size: 1.6rem; /* Increased font size */
+      font-weight: bold;
+    }
+    /* Testimonial Styling */
+    .testimonial {
+      background-color: #e4fde1;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Team Member Styling */
+    .team-member {
+      text-align: center;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 4px solid #ff9f1c;
+    }
+    /* Footer Styling */
+    footer {
+      background-color: #003049;
+      color: white;
+      padding: 20px;
+    }
+  </style>
+  <link rel="icon" href="assets/DALL·E 2024-11-13 00.31-Photoroom.jpg" type="image/png">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#"><img src="assets/DALL·E 2024-11-13 00.31.47 - A minimalist, modern logo for a travel agency named 'Nomadly'-Photoroom.jpg" alt="Nomadly Icon" style="width: 40px; margin-right: 10px;">Nomadly</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#destinations">Destinations</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#tours">Tours</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Discover Your Next Adventure</h1>
+      <p>Explore the world's most beautiful destinations with us.</p>
+      <a href="#destinations" class="btn btn-primary btn-lg">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Destinations</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Paris</h5>
+            </div>
+            <img src="assets/paris_bg.jpg" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Paris">
+            <div class="card-body">
+              <a href="paris.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Santorini</h5>
+            </div>
+            <img src="assets/santorini.jpg" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Santorini">
+            <div class="card-body">
+              <a href="santorini.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Kyoto</h5>
+            </div>
+            <img src="assets/kyoto.jpg" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Kyoto">
+            <div class="card-body">
+              <a href="kyoto.html" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section id="tours" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Tour Packages</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Beachside Getaway</h5>
+            </div>
+            <img src="assets/BeachsideGetaway.jpg" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Beachside Getaway">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mountain Adventure</h5>
+            </div>
+            <img src="assets/MountainAdventure.webp" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Mountain Adventure">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">City Tour Experience</h5>
+            </div>
+            <img src="assets/City Tour Experience.webp" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="City Tour Experience">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Flight Bookings</h5>
+            </div>
+            <img src="assets/Flight Bookings.jpg" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Flight Bookings">
+            <div class="card-body">
+              <p>We provide hassle-free flight booking services to make your journey comfortable and easy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hotel Reservations</h5>
+            </div>
+            <img src="assets/HotelReservations.webp" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Hotel Reservations">
+            <div class="card-body">
+              <p>Book the best hotels at the most competitive rates through our extensive network.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 class="card-title">Travel Insurance</h5>
+            </div>
+            <img src="assets/Travel Insurance.jpg" style="width: 100%; height: 450px; object-fit: cover; border-radius: 8px;" class="card-img-top" alt="Travel Insurance">
+            <div class="card-body">
+              <p>Travel with peace of mind by opting for our comprehensive travel insurance plans.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+      <h2 class="text-center mb-4">What Our Clients Say</h2>
+      <div class="row">
+          <div class="col-md-4">
+              <div class="testimonial text-center p-4">
+                  <img src="assets/review1.jpg" alt="Client 1" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;">
+                  <p>"Amazing service and unforgettable experience. Highly recommend this agency!"</p>
+                  <h6>- Emily R.</h6>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="testimonial text-center p-4">
+                  <img src="assets/review2.jpg" alt="Client 2" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;">
+                  <p>"The best vacation I've ever had, thanks to their fantastic tour packages."</p>
+                  <h6>- Mark T.</h6>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="testimonial text-center p-4">
+                  <img src="assets/review3.jpg" alt="Client 3" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 15px;">
+                  <p>"Friendly staff, great locations, and well-organized trips. Loved every moment."</p>
+                  <h6>- Anna K.</h6>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="destination" class="form-label">Destination of Interest</label>
+          <input type="text" class="form-control" id="destination" placeholder="Destination">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2024 Nomadly. All rights reserved.</p>
+    <div>
+      <a href="#" class="text-white me-3">Facebook</a>
+      <a href="#" class="text-white me-3">Twitter</a>
+      <a href="#" class="text-white">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
